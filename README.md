@@ -130,9 +130,13 @@ Does **not** kill on: further missing-`sub` lint alone; further live-account sca
 
 ## CI
 
-Canonical GitHub Actions workflow text lives at [`ci/github-actions-ci.yml`](ci/github-actions-ci.yml) (pytest on Python 3.10 and 3.12, push+PR to `main`).
+GitHub Actions workflow: [`.github/workflows/ci.yml`](.github/workflows/ci.yml) (same text as [`ci/github-actions-ci.yml`](ci/github-actions-ci.yml)).
 
-This RC’s push token lacked the GitHub OAuth **`workflow`** scope, so `.github/workflows/ci.yml` could not be committed via `git push`. To enable Actions: copy `ci/github-actions-ci.yml` → `.github/workflows/ci.yml` with a token that has `workflow` scope (or create the file in the GitHub UI). Local `pytest` for this RC: **19 passed**.
+- Triggers: push and pull_request to `main`
+- Matrix: Python 3.10 and 3.12 — `pip install -e ".[dev]"` then `pytest -q`
+- Status: https://github.com/mapleleaflatte03/gha-oidc-claimsim/actions
+
+Local substitute: `pytest -q` (19 passed on this tree).
 
 ## License
 
