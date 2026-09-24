@@ -1,0 +1,9 @@
+{
+  "repository": "acme/payments",
+  "event_name": "workflow_dispatch",
+  "ref": "refs/heads/main",
+  "ref_type": "branch",
+  "environment": null,
+  "audience": "sts.amazonaws.com",
+  "notes": "Non-PR branch run → sub uses ref:refs/heads/BRANCH"
+}

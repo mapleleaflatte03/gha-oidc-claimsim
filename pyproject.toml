@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gha-oidc-claimsim"
+version = "0.1.0-rc.1"
+description = "Offline GitHub Actions OIDC claim simulation against IAM trust JSON"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [{ name = "gha-oidc-claimsim contributors" }]
+keywords = ["oidc", "github-actions", "aws", "iam", "cli", "security"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+]
+dependencies = [
+  "click>=8.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+oidc-claimsim = "gha_oidc_claimsim.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/mapleleaflatte03/gha-oidc-claimsim"
+Repository = "https://github.com/mapleleaflatte03/gha-oidc-claimsim"
+Issues = "https://github.com/mapleleaflatte03/gha-oidc-claimsim/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

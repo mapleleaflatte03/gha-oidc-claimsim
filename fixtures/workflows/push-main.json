@@ -1,0 +1,9 @@
+{
+  "repository": "acme/payments",
+  "event_name": "push",
+  "ref": "refs/heads/main",
+  "ref_type": "branch",
+  "environment": null,
+  "audience": "sts.amazonaws.com",
+  "notes": "Matches SO class where trust pins ref:refs/heads/main — push succeeds"
+}

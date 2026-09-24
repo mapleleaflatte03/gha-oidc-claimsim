@@ -1,0 +1,11 @@
+{
+  "repository": "acme/payments",
+  "event_name": "pull_request",
+  "ref": "refs/pull/42/merge",
+  "ref_type": "branch",
+  "head_ref": "feature/oidc-fix",
+  "base_ref": "main",
+  "environment": null,
+  "audience": "sts.amazonaws.com",
+  "notes": "Default sub is repo:ORG/REPO:pull_request — NOT ref:refs/heads/main (SIG3-003/004)"
+}
