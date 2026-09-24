@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0-rc.2 — 2026-09-24
+
+Remediation / polish RC after QG-003 B1 (CI) and QG-004 non-blocking notes.
+
+- Enabled GitHub Actions: installed `.github/workflows/ci.yml` (from `ci/github-actions-ci.yml`) via GitHub UI — OAuth push lacked `workflow` scope
+- Green CI on Python 3.10 + 3.12 (push to `main`)
+- README CI section updated to match live Actions (honesty)
+- Version strings aligned to `0.1.0-rc.2` (`pyproject.toml`, CLI `__version__`, README)
+- **Still not published to PyPI** — install from git; no social / no MEASURE invent
+
 ## 0.1.0-rc.1 — 2026-09-24
 
 Initial release candidate.

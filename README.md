@@ -4,9 +4,9 @@ Offline **GitHub Actions → AWS IAM OIDC** claim simulation CLI.
 
 Predict default OIDC `sub` / `aud` for a workflow **event context JSON**, evaluate against an IAM role **trust policy JSON**, and print **ALLOW** or **DENY** with per-condition reasons — no STS, no AWS credentials, no network.
 
-**Version:** `0.1.0-rc.1` (release candidate)
+**Version:** `0.1.0-rc.2` (release candidate)
 
-**Current RC:** [v0.1.0-rc.1](https://github.com/mapleleaflatte03/gha-oidc-claimsim/releases/tag/v0.1.0-rc.1) — install from git for this RC; **not on PyPI**.
+**Current RC:** [v0.1.0-rc.2](https://github.com/mapleleaflatte03/gha-oidc-claimsim/releases/tag/v0.1.0-rc.2) — install from git for this RC; **not on PyPI**.
 
 CLI entrypoint: `oidc-claimsim`
 
